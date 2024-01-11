@@ -6,17 +6,17 @@ Welcome to my portfolio repository! This collection encompasses a variety of my 
 
 ### 🐍 Python
 
-  #### 📊 Data Analysis
-    1. **Project 1: Movie Project**
-      - Description: This project includes a data analysis and regression analysis on a movie dataset that examines the relationship between budget and box office receipts,
-      the correlation between movie duration and IMDB score, and the relationship between IMDB score and box office receipts.
-      - Files: `Movie Project.ipynb`
-      - How to Run: Just click.
-  
-    2. **Project 2:**
-      - Description: Brief overview of Project 2.
-      - Files: `script.py`, `config.json`, ...
-      - How to Run: Step-by-step guide on how to run the project.
+    #### 📊 Data Analysis
+      1. **Project 1: Movie Project**
+        - Description: This project includes a data analysis and regression analysis on a movie dataset that examines the relationship between budget and box office receipts,
+        the correlation between movie duration and IMDB score, and the relationship between IMDB score and box office receipts.
+        - Files: `Movie Project.ipynb`
+        - How to Run: Just click.
+    
+      2. **Project 2:**
+        - Description: Brief overview of Project 2.
+        - Files: `script.py`, `config.json`, ...
+        - How to Run: Step-by-step guide on how to run the project.
 
 ### 🕹️ C#
 ### 🎮 Unreal Engine 5
