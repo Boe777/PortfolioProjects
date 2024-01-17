@@ -1,0 +1,67 @@
+<!-- templates/recipes/home.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script defer src="{% static 'js/main.js' %}"></script>
+</head>
+<body class="bg-gray-100">
+
+<div class="container mx-auto mt-8 px-4">
+    <form method="post" action="{% url 'home' %}" id="countryForm" class="mb-4">
+        {% csrf_token %}
+        <select name="country" onchange="onCountryChange()" class="p-2 md:p-3 border rounded w-full focus:outline-none focus:border-blue-500 transition duration-300">
+            <option value="">Select a country</option>
+            {% for country in countries %}
+                <option value="{{ country.name }}" {% if country.name == selected_country %}selected{% endif %}>{{ country.name }}</option>
+            {% endfor %}
+        </select>
+    </form>
+
+    {% if selected_country %}
+        <form method="post" action="{% url 'home' %}" id="mealForm" class="mb-4">
+            {% csrf_token %}
+            <input type="hidden" name="country" value="{{ selected_country }}">
+            <select name="meal" onchange="onMealChange()" class="p-2 md:p-3 border rounded w-full focus:outline-none focus:border-blue-500 transition duration-300">
+                <option value="">Select a meal</option>
+                {% for meal in meals %}
+                    <option value="{{ meal.strMeal }}" {% if meal.strMeal == selected_meal.strMeal %}selected{% endif %}>{{ meal.strMeal }}</option>
+                {% endfor %}
+            </select>
+        </form>
+
+        {% if selected_meal %}
+            <div class="bg-white p-4 md:p-8 rounded shadow-lg transition duration-300 hover:shadow-xl md:flex items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 order-2 md:order-1">
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-bold mb-4">{{ selected_meal.strMeal }}</h2>
+                    <p class="text-gray-700">{{ selected_meal.strInstructions }}</p>
+
+                    <h3 class="text-lg font-bold mt-4">Ingredients:</h3>
+                    <ul class="list-disc pl-6">
+                        {% for ingredient in selected_meal.ingredients %}
+                            <li>{{ ingredient }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="md:w-1/2 order-1 md:order-2">
+                    {% if image_url %}
+                        <img src="{{ image_url }}" alt="{{ selected_meal.strMeal }}" class="rounded shadow-md w-full h-auto hover:opacity-90 transition duration-300 max-height-64 md:max-height-full">
+                    {% else %}
+                        <p class="mt-4 text-gray-500">No image available</p>
+                    {% endif %}
+                </div>
+            </div>
+        {% endif %}
+    {% endif %}
+</div>
+
+</body>
+</html>
