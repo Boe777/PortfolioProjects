@@ -1,6 +1,7 @@
 🛠 How to Run
 
 Ensure:
+
       *Python and Django are installed.
       *Clone the repository to your local machine.
       *Navigate to the project directory.
