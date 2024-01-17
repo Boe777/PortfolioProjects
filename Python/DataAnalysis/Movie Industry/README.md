@@ -1,8 +1,10 @@
 🛠 How to Run
 
 Ensure:
+
       *Install Required Libraries:
           pip install pandas matplotlib seaborn numpy scipy scikit-learn
+          
       *Download the Dataset (Movie Industry by DANIEL GRIJALVA on kaggle) and ensure that you have the 'movies.csv' dataset available in the same directory as your Python script.
           movies_df = pd.read_csv(r'path/to/movies.csv')
       *Copy and paste the entire script into a Python environment (such as Jupyter Notebook, VS Code, or a Python script file). Run the script, and it will execute the provided analyses.
