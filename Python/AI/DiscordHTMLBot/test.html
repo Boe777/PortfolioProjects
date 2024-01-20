@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Ready to Explore?</title>
+        <style>
+            body {
+                font-family: Times New Roman, serif;
+                color: black;
+                background-color: white;
+            }
+            h1, h2, p {
+                text-align: center;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                float: random;
+                border: white solid 5px;
+            }
+            #navigation {
+                display: ;
+                text-align: center;
+                padding: 10px;
+                background-color: #f2f2f2;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                z-index: 1000;
+            }
+            #navigation a {
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                color: black;
+            }
+            #navigation a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        </style>
+        <script>
+            function showPage(pageNumber) {
+                var pages = document.querySelectorAll('.page');
+                for (var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+                document.getElementById('page' + pageNumber).style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>
+        <div id="navigation">
+            <a href="javascript:void(0);" onclick="showPage(1);">1. Ready to Explore?</a><a href="javascript:void(0);" onclick="showPage(2);">2. Discover Hidden Gems</a>
+        </div>
+        
+        <div class="page" id="page1" style="display: block;">
+            <h1>Ready to Explore?</h1>
+            <h2>We Invite You to Explore Every Corner of the World</h2>
+            <p>Embarking on a journey, discovering new places, and experiencing different cultures are fantastic ways to explore the vibrant facets of life.</br> This website is designed to introduce you to unforgettable destinations worldwide and enhance your travel experience. </br>Are you ready to open the doors to your dream vacation? Let's get started!</p>
+            <img src="Photos\photo1.jpg" alt="Photo">
+        </div>
+    
+        <div class="page" id="page2" style="display: none;">
+            <h1>Discover Hidden Gems</h1>
+            <h2>Explorations Beyond Touristic Boundaries</h2>
+            <p>For those who love to travel, there are many hidden gems waiting to be discovered beyond the well-trodden tourist paths. </br>On this page, we will delve into extraordinary destinations and unknown beauties. </br>Let's explore these special places that are away from tourist crowds, embraced by nature, and enriched by local cultures.</p>
+            <img src="Photos\photo2.jpg" alt="Photo">
+        </div>
+    
+    </body>
+</html>
