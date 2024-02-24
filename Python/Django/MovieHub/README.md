@@ -6,10 +6,10 @@ Movie Recommender System Using TF-IDF and Cosine Similarity:
 In this project, the recommendation system recommends movies using a text-based similarity measure. Based on movie summaries, we transform the text of each movie into a TF-IDF vector. Subsequently, cosine similarity is employed to measure the similarities between these vectors. After selecting a movie that meets the user's specified criteria, the system identifies the most similar movies to this selection and presents them as recommendations. In this way, a system aimed at suggesting other movies similar to those the user enjoys is obtained.
 
 ## ⚙️ Technologies:
-🌐 Django: For web application development,
-🐼 Pandas: For data analysis and processing,
-🔍 Google API Client: To find movie trailers using the YouTube API,
-🏗️ HTML, CSS ve JavaScript: HTML, CSS and JavaScript were used to design the user interface.    
+Django 🌐: For web application development,
+Pandas 🐼: For data analysis and processing,
+Google API Client 🔍: To find movie trailers using the YouTube API,
+HTML, CSS ve JavaScript 🏗️: HTML, CSS and JavaScript were used to design the user interface.    
 
 ## 🛠️ How to use:
 1. Clone this repository: `git clone https://github.com/Boe777/PortfolioProjects/tree/main/Python/Django/MovieHub`
