@@ -18,6 +18,14 @@ Welcome to my portfolio repository! This collection encompasses a variety of my 
       1. **Project 1: International Recipes by Country**
         - Description: This website allows the user to select a country and see the local recipes of the selected country. Developed in Django, the website uses the Rest Countries API to retrieve a list of countries, The Meal DB API to retrieve the dishes of the selected country and Pixabay API to provide images of the dishes. The user can view the dishes of the selected country and access recipes and images for each dish.
 
+        2. **Project 2:**
+        - Description: I have developed a recommendation system based on movies. Users can get recommendations by selecting their favorite movie genres and a range of years. The system recommends movies that best match user preferences using TF-IDF vectors and similarity matrix.
+
+    #### 🕸 AI
+      1. **Project 1: Discord HTML Bot**
+        - Discord HTML Bot offers a user-friendly solution for generating HTML code, empowering both beginners and experienced users to effortlessly create their dream website. Simplifying the website development process, this bot allows users to define essential elements through interactive commands, making web development accessible to all.
+
+
 
 ### 🕹️ C#
 ### 🎮 Unreal Engine 5
