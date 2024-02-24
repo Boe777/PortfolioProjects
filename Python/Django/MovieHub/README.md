@@ -15,9 +15,12 @@ In this project, the recommendation system recommends movies using a text-based 
 1. Clone this repository: `git clone https://github.com/Boe777/PortfolioProjects/tree/main/Python/Django/MovieHub`
 2. Navigate to the project directory: `cd MovieHub`
 3. Please install the requirements specified in the `requirements.txt` file.
-4. Komutu çalıştırarak MovieHub'ı çalıştırın: `python manage.py runserver`
-5. Open this URL from your web browser: http://127.0.0.1:8000/
-6. On the main page, fill in the "Genre", "Release Date", "Release Year", "Minimum Score" and "Maximum Score" fields.
+4. In MovieHub/settings.py
+    - Enter your own key in the SECRET_KEY variable.
+    - Enter your own key in the YOUTUBE_API_KEY variable.
+5. Komutu çalıştırarak MovieHub'ı çalıştırın: `python manage.py runserver`
+6. Open this URL from your web browser: http://127.0.0.1:8000/
+7. On the main page, fill in the "Genre", "Release Date", "Release Year", "Minimum Score" and "Maximum Score" fields.
    - Click on the "Suggest a Movie" button.
    - The results will suggest one of the movies filtered according to the specified criteria. You can see movie details, website and trailer.
 
